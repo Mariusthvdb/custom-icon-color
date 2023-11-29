@@ -1,3 +1,11 @@
+# Card-mod customization
+For full reference and documents go to the [card-mod repo](https://github.com/thomasloven/lovelace-card-mod), and find a [huge community thread](https://community.home-assistant.io/t/card-mod-add-css-styles-to-any-lovelace-card/120744) and a dedicated [topic on its powerful theming](https://community.home-assistant.io/t/card-mod-super-charge-your-themes/212176) options.
+
+Below a short summary of many templates we use in [custom-ui](https://github.com/Mariusthvdb/custom-ui), but can also be replaced by these card-mod modifications.
+Be aware that these card-mod modifications only show in the primary Frontend interface/Dashboard, and do not show in the secondary panels like more-info or other dialogs. If you need that, your only option is custom-ui. 
+In all honestly, we cant promise that won't break in the (near) future beyond repair.
+
+-----
 Set an individual filter on an entity entity_picture
 ```
 entity: person.mariusthvdb
@@ -182,15 +190,18 @@ so posting here as a further reference:
               {% endif %}
           }
 ```
-To have  globally available card-mod customizations, like here in icon_color and icon, save these inside your `secrets.yaml` and insert them via
-`!secret not_home_picture` or any of the other secrets of course...
 
+----
+To have  **globally available** card-mod customizations, save these inside your `secrets.yaml` and insert them via
+`!secret <secret>` tag.
+
+Example:
 ```
 entity: person.mariusthvdb:
 card_mod: !secret not_home_picture
 ```
-
-See below for a collection of generic mods, used throughout my config, that only have to be written once, and are imported by that tiny `!secret` reference:
+-----
+See below for a collection of generic mods, used throughout the config, that only have to be written once, and can be imported by that tiny `!secret` reference:
 
 ```
 ##########################################################################################
