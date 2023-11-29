@@ -42,7 +42,7 @@ card_mod:
          {{indexColor.get(state,'grey')}};
 ```
 
-Set an indivual entity icon
+Set an indivudal entity icon
 ```
 entity: sensor.wifi_signal_strength
 card_mod:
@@ -108,49 +108,49 @@ card_mod:
 # note you only need to set the initial variable `{% set con = states(config.entity) %}` once,
 # and it is used in both mods!
 ```
-Set an icon_color in an auto-entities card:
+Set an icon_color in an [`custom:auto-entities`](https://github.com/thomasloven/lovelace-auto-entities) card:
 ```
-          - type: custom:auto-entities
-            card:
-              type: entities
-              card_mod: &style
-                style: |
-                  ha-card {
-                    box-shadow: none;
-                    margin: 0px -16px -16px -16px;
-                  }
-            show_empty: false
-            filter:
-              include:
-                - entity_id: '*air_quality_*'
-                  options:
-                    card_mod:
-                      style: |
-                        :host {
-                          --paper-item-icon-color:
-                            {% set state = states(config.entity)|int(default=-5) %}
-                            {% if state == 'unknown' %} gray
-                            {% elif state <= 50 %} seagreen
-                            {% elif state <= 100 %} gold
-                            {% elif state <= 150 %} orange
-                            {% elif state <= 50 %} crimson
-                            {% elif state <= 100 %} purple
-                            {% elif state <= 150 %} maroon
-                            {% else %} red
-                            {% endif %}
-                - entity_id: '*air_pollution_level'
-                  options:
-                    card_mod:
-                      style: |
-                        :host {
-                          --paper-item-icon-color:
-                            {% set state = states(config.entity) %}
-                            {% set indexColor =
-                              {'good':'seagreen','moderate':'gold',
-                               'unhealthy_sensitive':'orange','unhealthy':'crimson',
-                               'very_unhealthy':'purple','hazardous':'maroon'} %}
-                             {{indexColor.get(state,'grey')}};
-                        }
+- type: custom:auto-entities
+  card:
+    type: entities
+    card_mod: &style
+      style: |
+        ha-card {
+          box-shadow: none;
+          margin: 0px -16px -16px -16px;
+        }
+  show_empty: false
+  filter:
+    include:
+      - entity_id: '*air_quality_*'
+        options:
+          card_mod:
+            style: |
+              :host {
+                --paper-item-icon-color:
+                  {% set state = states(config.entity)|int(default=-5) %}
+                  {% if state == 'unknown' %} gray
+                  {% elif state <= 50 %} seagreen
+                  {% elif state <= 100 %} gold
+                  {% elif state <= 150 %} orange
+                  {% elif state <= 50 %} crimson
+                  {% elif state <= 100 %} purple
+                  {% elif state <= 150 %} maroon
+                  {% else %} red
+                  {% endif %}
+      - entity_id: '*air_pollution_level'
+        options:
+          card_mod:
+            style: |
+              :host {
+                --paper-item-icon-color:
+                  {% set state = states(config.entity) %}
+                  {% set indexColor =
+                    {'good':'seagreen','moderate':'gold',
+                     'unhealthy_sensitive':'orange','unhealthy':'crimson',
+                     'very_unhealthy':'purple','hazardous':'maroon'} %}
+                   {{indexColor.get(state,'grey')}};
+              }
 ```
 
 Set an icon-color on a [`custom:template-entity-row`](https://github.com/thomasloven/lovelace-template-entity-row) (which already supports icon templates, but needs the mod for a color). Uses a different DOM-path,
@@ -190,7 +190,7 @@ entity: person.mariusthvdb:
 card_mod: !secret not_home_picture
 ```
 
-See below for a collection of generic mods, used throughtout my config, that only have to be written down once, and are imported by that tiny `!secret` reference
+See below for a collection of generic mods, used throughout my config, that only have to be written once, and are imported by that tiny `!secret` reference:
 
 ```
 ##########################################################################################
