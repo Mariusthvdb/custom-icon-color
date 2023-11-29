@@ -19,6 +19,11 @@ You can also use it in [template:](https://www.home-assistant.io/integrations/te
 
 <img width="492" alt="icon-color" src="https://user-images.githubusercontent.com/33354141/168234088-ee5a5b11-0e68-49fd-b664-6e5a13c79fb0.png">
 
+Some live action:
+
+![alarm_volume](https://github.com/Mariusthvdb/custom-ui-icon-color/assets/33354141/3f1840b7-9608-4cb6-a127-b07b82cd28af)
+
+
 ## NEWS
 
 **New minimized version for custom attribute icon_color only**
