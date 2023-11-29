@@ -1,4 +1,4 @@
-Set an indivual filter on an entity entity_picture
+Set an individual filter on an entity entity_picture
 ```
 entity: person.mariusthvdb
 card_mod:
