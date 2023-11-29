@@ -261,13 +261,20 @@ See below for a collection of generic mods, used throughout the config, that onl
 ##########################################################################################
 # Card mod stylings frequently used saved in secrets.yaml
 ##########################################################################################
-not_home_picture:
+not_home_picture: # in entities card
   style:
     hui-generic-entity-row:
       $: |
         state-badge {
           filter: {{'grayscale(100%)' if not is_state(config.entity,'home')
                     else 'none'}};
+        }
+
+not_home_picture_glance:
+  style: |
+    state-badge {
+      filter: {{'grayscale(100%)' if not is_state(config.entity,'home')
+                else 'none'}};
         }
 
 wind_direction:
