@@ -42,7 +42,7 @@ card_mod:
          {{indexColor.get(state,'grey')}};
 ```
 
-Set an indivudal entity icon
+Set an individual entity icon
 ```
 entity: sensor.wifi_signal_strength
 card_mod:
