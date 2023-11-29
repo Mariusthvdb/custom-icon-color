@@ -72,7 +72,7 @@ card_mod:
       --paper-item-icon-color:
         {{'green' if con == 'connected' else 'maroon'}};
     }
-# note you only need to set the intial variable once, and nit is used in both mods!
+# note you only need to set the intial variable `{% set con = states(config.entity) %}` once, and it is used in both mods!
 ```
 Set an icon_color in an auto-entities card:
 ```
