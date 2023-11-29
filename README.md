@@ -36,7 +36,7 @@ Configuration is identical to what is already explained in the example section
 
 ### Manual Installation
 
-1. Download the [custom-ui-icon-color](http://www.github.com/Mariusthvdb/custom-ui/releases/latest/download/custom-ui.js)
+1. Download the [custom-ui-icon-color](http://www.github.com/Mariusthvdb/custom-ui-icon-color/releases/latest/download/custom-ui-icon-color.js)
 2. Place the file in your `config/www` folder or any subfolders.
 3. Include the card code in your `ui-lovelace-card.yaml`
 
@@ -55,7 +55,7 @@ or when using the UI, click
 See [INSTALLING](https://github.com/Mariusthvdb/custom-ui/blob/master/INSTALLING.md)
 
 ## Examples
-See [EXAMPLES](https://github.com/Mariusthvdb/custom-ui/blob/master/EXAMPLES.md).
+See [EXAMPLES](https://github.com/Mariusthvdb/custom-ui-icon-color/blob/master/EXAMPLES.md).
 
 ---
 
