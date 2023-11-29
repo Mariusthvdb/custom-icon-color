@@ -190,7 +190,61 @@ so posting here as a further reference:
               {% endif %}
           }
 ```
+## Re-use a mod in the same file
 
+We can use yaml anchors to copy&paste these mods:
+
+```
+entities:
+  - entity: person.mariusthvdb
+    <<: &person_picture
+    card_mod:
+      style:
+        hui-generic-entity-row:
+          $: |
+            state-badge {
+              filter: {{'grayscale(100%)' if not is_state(config.entity,'home')
+                        else 'none'}};
+            }
+  - entity: person.mylovely
+    <<: *person_picture
+```
+
+As always with Yaml anchors this is a *per file* option (can't c&p across the full config), and only complete yaml blocks can be pasted. Still, some creativity is possible, check the second `no_icon` on the second input_select entity:
+
+```
+- entity: input_select.mode
+  card_mod:
+    style:
+      hui-generic-entity-row:
+        $: |
+          state-badge {
+            {% set state = states(config.entity)|slugify %}
+            {% set path = '/local/modes/' %}
+            background-image:
+              url('{{path}}{{state}}.png');
+          }
+      <<: &no_icon
+        .: |
+          :host {
+            --card-mod-icon: none;
+          }
+- entity: input_select.activiteit
+  card_mod:
+    style:
+      hui-generic-entity-row:
+        $: |
+          state-badge {
+            {% set state = states(config.entity)|slugify %}
+            {% set path = '/local/activities/' %}
+            background-image:
+              url('{{path}}{{state}}.png');
+          }
+      <<: *no_icon
+```
+We won't go into the yaml anchors any deeper here, please find some suggested reading in [Thomas Loven's publication](http://thomasloven.com/blog/2018/08/YAML-For-Nonprogrammers/) and .
+
+## Re-use mods system wide
 ----
 To have  **globally available** card-mod customizations, save these inside your `secrets.yaml` and insert them via
 `!secret <secret>` tag.
