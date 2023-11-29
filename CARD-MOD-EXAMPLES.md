@@ -62,6 +62,18 @@ card_mod:
 
 Set both icon and icon_color:
 ```
+entity: input_select.tts_gender
+card_mod:
+  style: |
+    :host {
+      --card-mod-icon:
+          {% set gen = states(config.entity) %}
+          {{'mdi:human-female' if gen == 'Female' else 'mdi:human-male'}};
+      --paper-item-icon-color:
+          {% set gen = states(config.entity) %}
+          {{'maroon' if gen == 'Female' else 'dodgerblue'}};
+    }
+
 entity: sensor.zigbee_connectivity
 card_mod:
   style: |
@@ -72,6 +84,27 @@ card_mod:
       --paper-item-icon-color:
         {{'green' if con == 'connected' else 'maroon'}};
     }
+
+entity: input_number.intercom_volume
+card_mod:
+  style: |
+    :host {
+      --card-mod-icon:
+        {% set vol = states(config.entity)|float(0) %}
+        {% if vol == 0.0 %} mdi:volume-off
+        {% elif vol <= 0.3 %} mdi:volume-low
+        {% elif vol <= 0.6  %} mdi:volume-medium
+        {% else %} mdi:volume-high
+        {% endif %};
+      --paper-item-icon-color:
+        {% if vol == 0.0 %} gray
+        {% elif vol <= 0.3 %} dodgerblue
+        {% elif vol <= 0.6 %} green
+        {% elif vol <= 0.8 %} orange
+        {% else %} red
+        {% endif %};
+    }
+
 # note you only need to set the intial variable `{% set con = states(config.entity) %}` once, and it is used in both mods!
 ```
 Set an icon_color in an auto-entities card:
