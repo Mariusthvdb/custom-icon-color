@@ -153,6 +153,35 @@ Set an icon_color in an auto-entities card:
                         }
 ```
 
+Set an icon-color on a [`custom:template-entity-row`](https://github.com/thomasloven/lovelace-template-entity-row) (which already supports icon templates, but needs the mod for a color). Uses a different DOM-path,
+so posting here as a further reference:
+```
+- type: custom:template-entity-row
+  entity: input_number.alarm_volume
+  state: >
+    {{states(config.entity)|float(0)}} %
+  icon: >
+    {% set vol = states(config.entity)|float(0) %}
+    {% if vol == 0.0 %} mdi:volume-off
+    {% elif vol <= 0.3 %} mdi:volume-low
+    {% elif vol <= 0.6  %} mdi:volume-medium
+    {% else %} mdi:volume-high
+    {% endif %}
+  card_mod:
+    style:
+      div#wrapper:
+        state-badge $: |
+          ha-state-icon {
+            color:
+              {% set vol = states(config.entity)|float(0) %}
+              {% if vol == 0.0 %} gray
+              {% elif vol <= 0.3 %} dodgerblue
+              {% elif vol <= 0.6 %} green
+              {% elif vol <= 0.8 %} orange
+              {% else %} red
+              {% endif %}
+          }
+```
 To have  globally available card-mod customizations, like here in icon_color and icon, save these inside your `secrets.yaml` and insert them via
 `!secret not_home_picture` or any of the other secrets of course...
 
