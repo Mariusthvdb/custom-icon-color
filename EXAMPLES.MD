@@ -87,6 +87,6 @@ homeassistant:
       icon_color: red
 ```
 
-Because the custom-ui templating is now no longer available, we have to resort to the great [card-mod[(https://github.com/thomasloven/lovelace-card-mod) plugin for dynamic Dasboard coloring of our entities and more, way more options.
+Because the custom-ui templating is now no longer available, we have to resort to the great [card-mod](https://github.com/thomasloven/lovelace-card-mod) plugin for dynamic Dasboard coloring of our entities and more, way more options.
 
 In the card-mod-examples several useful mods are documented to replace the former custom-ui templates. 
