@@ -105,7 +105,8 @@ card_mod:
         {% endif %};
     }
 
-# note you only need to set the intial variable `{% set con = states(config.entity) %}` once, and it is used in both mods!
+# note you only need to set the initial variable `{% set con = states(config.entity) %}` once,
+and it is used in both mods!
 ```
 Set an icon_color in an auto-entities card:
 ```
