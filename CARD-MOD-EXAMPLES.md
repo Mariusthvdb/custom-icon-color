@@ -454,12 +454,7 @@ luchtvochtigheid_binnen:
         {% else %} red
         {% endif %};
     }
-#           if (state > 80) return 'red';
-#           if (state > 70) return 'maroon';
-#           if (state > 60) return 'orange';
-#           if (state > 49) return 'green';
-#           if (state > 40) return 'maroon';
-#           return 'red';
+
 power_color:
   style: |
     :host {
