@@ -1,5 +1,5 @@
 # Some examples using custom-ui-icon-color.
-(using custom-ui with templating is explained [here](https://github.com/Mariusthvdb/custom-ui/blob/master/EXAMPLES.md)
+(using custom-ui with templating is explained [here](https://github.com/Mariusthvdb/custom-ui/blob/master/EXAMPLES.md))
 
 # Icon color
 
