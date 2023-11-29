@@ -1,5 +1,5 @@
 const Name = "Custom-ui-icon-color";
-const Version = "20231126";
+const Version = "20231128";
 const Description = "add icon_color to UI";
 const Url = "https://github.com/Mariusthvdb/custom-ui-icon-color";
 console.info(
@@ -36,7 +36,7 @@ window.customUI = {
     window.customUI.installStateBadge();
   },
   init() {
-    if (window.customUI.initDone) return;
+    window.customUI.initDone = true;
     window.customUI.installClassHooks();
     window.CUSTOM_UI_LIST = window.CUSTOM_UI_LIST || [];
     window.CUSTOM_UI_LIST.push({
