@@ -1,7 +1,7 @@
 Set an indivual filter on an entity entity_picture
 ```
 entity: person.mariusthvdb:
-card_mod
+card_mod:
   style:
     hui-generic-entity-row:
       $: |
@@ -154,6 +154,13 @@ Set an icon_color in an auto-entities card:
 
 To have  globally available card-mod customizations, like here in icon_color and icon, save these inside your `secrets.yaml` and insert them via
 `!secret not_home_picture` or any of the other secrets of course...
+
+```
+entity: person.mariusthvdb:
+card_mod: !secret not_home_picture
+```
+
+See below for a collection of generic mods, used throughtout my config, that only have to be written down once, and are imported by that tiny `!secret` reference
 
 ```
 ##########################################################################################
