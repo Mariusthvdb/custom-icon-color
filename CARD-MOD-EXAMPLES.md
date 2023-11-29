@@ -1,6 +1,6 @@
 Set an indivual filter on an entity entity_picture
 ```
-entity: person.mariusthvdb:
+entity: person.mariusthvdb
 card_mod:
   style:
     hui-generic-entity-row:
