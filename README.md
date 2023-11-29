@@ -56,6 +56,7 @@ See [INSTALLING](https://github.com/Mariusthvdb/custom-ui/blob/master/INSTALLING
 
 ## Examples
 See [EXAMPLES](https://github.com/Mariusthvdb/custom-ui-icon-color/blob/master/EXAMPLES.md).
+For card-mod replacement mods, see [CARD-MOD-EXAMPLES](https://github.com/Mariusthvdb/custom-ui-icon-color/blob/main/CARD-MOD-EXAMPLES.md)
 
 ---
 
