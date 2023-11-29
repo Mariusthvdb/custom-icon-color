@@ -83,8 +83,8 @@ plugin for Lovelace with many features, to the rescue.
 
 
 ### History
-I've been a longtime and heavy user of [custom-ui](https://github.com/Mariusthvdb/custom-ui), and this tiny icon_color sibling is the latest adaptation. Minimiez, severly cut in functionality, but very useful.
-You can read up on a bit if 
+I've been a longtime and heavy user of [custom-ui](https://github.com/Mariusthvdb/custom-ui), and this tiny icon_color sibling is the latest adaptation. Minimized, severly cut in functionality, but very useful.
+You can read up on a bit at 
 [history](https://github.com/Mariusthvdb/custom-ui/blob/master/HISTORY.md) how it came to this 
 adapted version.
 
