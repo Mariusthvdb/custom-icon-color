@@ -1,5 +1,10 @@
 # What is Custom-ui-icon-color
 
+[![GH-release](https://img.shields.io/github/v/release/Mariusthvdb/custom-ui-icon-color.svg?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/releases)
+[![GH-downloads](https://img.shields.io/github/downloads/Mariusthvdb/custom-ui-icon-color/total?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/releases)
+[![GH-last-commit](https://img.shields.io/github/last-commit/Mariusthvdb/custom-ui-icon-color.svg?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/commits/master)
+[![GH-code-size](https://img.shields.io/github/languages/code-size/Mariusthvdb/custom-ui-icon-color.svg?color=red&style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color)
+
 We can 
 [customize entities in core Home Assistant](https://www.home-assistant.io/docs/configuration/customizing-devices/). 
 
