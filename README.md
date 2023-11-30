@@ -8,9 +8,10 @@
 We can 
 [customize entities in core Home Assistant](https://www.home-assistant.io/docs/configuration/customizing-devices/). 
 
-However, there is no core attribute for an **icon_color** attribute. [Custom-ui](https://github.com/Mariusthvdb/custom-ui) can add that, and many other things, like templating any atttribute.
-Custom-ui is very powerful and capable of changing our Dashboards. For some this is too much, and not required. That's why we release this
-adapted version, that only adds the attribute for icon_color.
+However, there is no core attribute for an **icon_color**. [Custom-ui](https://github.com/Mariusthvdb/custom-ui) can add that, and many other things, like templating any atttribute.
+Custom-ui is very powerful and capable of changing our Dashboards. For some this is too much, and not required. That's why we released this adapted version, only adding the custom `icon_color` attribute.
+
+If you do require dynamic icon_colors on regular entities, use card_mod. You can find a selection of [CARD-MOD-EXAMPLES](https://github.com/Mariusthvdb/custom-ui-icon-color/blob/main/CARD-MOD-EXAMPLES.md) to show you how.
 
 You can use it to set the additional attribute in `customize:`, on a single entity, or **globally** in our Home Assistant configuration and thus create extremely powerful yet 
 very compact customizations.
