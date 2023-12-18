@@ -1,5 +1,6 @@
 # What is Custom-ui-icon-color
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=flat-square)](https://github.com/hacs/integration)
 [![GH-release](https://img.shields.io/github/v/release/Mariusthvdb/custom-ui-icon-color.svg?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/releases)
 [![GH-downloads](https://img.shields.io/github/downloads/Mariusthvdb/custom-ui-icon-color/total?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/releases)
 [![GH-last-commit](https://img.shields.io/github/last-commit/Mariusthvdb/custom-ui-icon-color.svg?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/commits/master)
@@ -39,26 +40,7 @@ Configuration is identical to what is already explained in the example section
 
 ## Installation
 
-
-### Manual Installation
-
-1. Download the [custom-ui-icon-color](http://www.github.com/Mariusthvdb/custom-ui-icon-color/releases/latest/download/custom-ui-icon-color.js)
-2. Place the file in your `config/www` folder or any subfolders.
-3. Include the card code in your `ui-lovelace-card.yaml`
-
-   ```yaml
-   title: Home
-   resources:
-     - url: /local/custom-ui-icon-color.js
-       type: module
-   ```
-or when using the UI, click 
-
-<a href="https://my.home-assistant.io/redirect/lovelace_resources/" target="_blank"><img src="https://my.home-assistant.io/badges/lovelace_resources.svg" alt="Open your Home Assistant instance and show your Lovelace resources." /></a>
-
-
-### Other installation methods
-See [INSTALLING](https://github.com/Mariusthvdb/custom-ui/blob/master/INSTALLING.md)
+<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Mariusthvdb&repository=custom-ui-icon-color&category=plugin" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
 
 ## Examples
 See [EXAMPLES](https://github.com/Mariusthvdb/custom-ui-icon-color/blob/master/EXAMPLES.md).
