@@ -28,6 +28,14 @@ Some live action:
 
 ## NEWS
 
+**New Plugin released allowing custom attributes filtering**
+
+From now on you are in control of the More-info attributes. 
+Filter all, unfilter all, or select which to see/hide by glob, domain, device_class, or entity_id. 
+Any combination is possible!
+
+Install custom-attributes via <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Mariusthvdb&repository=custom-attributes&category=plugin" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
+
 **New minimized version for custom attribute icon_color only**
 A new custom-ui sibling was released, which can be used only for adding an  [icon_color](https://github.com/Mariusthvdb/custom-ui/blob/master/custom-ui.js) attribute in `customize:` and the attributes configuration options of [template:](https://www.home-assistant.io/integrations/template/#attributes) entities.
 
