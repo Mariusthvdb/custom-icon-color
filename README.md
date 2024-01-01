@@ -1,10 +1,10 @@
-# What is Custom-ui-icon-color
+# What is Custom-icon-color
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=flat-square)](https://github.com/hacs/integration)
-[![GH-release](https://img.shields.io/github/v/release/Mariusthvdb/custom-ui-icon-color.svg?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/releases)
-[![GH-downloads](https://img.shields.io/github/downloads/Mariusthvdb/custom-ui-icon-color/total?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/releases)
-[![GH-last-commit](https://img.shields.io/github/last-commit/Mariusthvdb/custom-ui-icon-color.svg?style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color/commits/master)
-[![GH-code-size](https://img.shields.io/github/languages/code-size/Mariusthvdb/custom-ui-icon-color.svg?color=red&style=flat-square)](https://github.com/Mariusthvdb/custom-ui-icon-color)
+[![GH-release](https://img.shields.io/github/v/release/Mariusthvdb/custom-icon-color.svg?style=flat-square)](https://github.com/Mariusthvdb/custom-icon-color/releases)
+[![GH-downloads](https://img.shields.io/github/downloads/Mariusthvdb/custom-icon-color/total?style=flat-square)](https://github.com/Mariusthvdb/custom-icon-color/releases)
+[![GH-last-commit](https://img.shields.io/github/last-commit/Mariusthvdb/custom-icon-color.svg?style=flat-square)](https://github.com/Mariusthvdb/custom-icon-color/commits/master)
+[![GH-code-size](https://img.shields.io/github/languages/code-size/Mariusthvdb/custom-icon-color.svg?color=red&style=flat-square)](https://github.com/Mariusthvdb/custom-icon-color)
 
 We can 
 [customize entities in core Home Assistant](https://www.home-assistant.io/docs/configuration/customizing-devices/). 
@@ -12,7 +12,7 @@ We can
 However, there is no core attribute for an **icon_color**. [Custom-ui](https://github.com/Mariusthvdb/custom-ui) can add that, and many other things, like templating any atttribute.
 Custom-ui is very powerful and capable of changing our Dashboards. For some this is too much, and not required. That's why we released this adapted version, only adding the custom `icon_color` attribute.
 
-If you do require dynamic icon_colors on regular entities, use card_mod. You can find a selection of [CARD-MOD-EXAMPLES](https://github.com/Mariusthvdb/custom-ui-icon-color/blob/main/CARD-MOD-EXAMPLES.md) to show you how.
+If you do require dynamic icon_colors on regular entities, use card_mod. You can find a selection of [CARD-MOD-EXAMPLES](https://github.com/Mariusthvdb/custom-icon-color/blob/main/CARD-MOD-EXAMPLES.md) to show you how.
 
 You can use it to set the additional attribute in `customize:`, on a single entity, or **globally** in our Home Assistant configuration and thus create extremely powerful yet 
 very compact customizations.
@@ -23,7 +23,7 @@ You can also use it in [template:](https://www.home-assistant.io/integrations/te
 
 Some live action:
 
-![alarm_volume](https://github.com/Mariusthvdb/custom-ui-icon-color/assets/33354141/3f1840b7-9608-4cb6-a127-b07b82cd28af)
+![alarm_volume](https://github.com/Mariusthvdb/custom-icon-color/assets/33354141/3f1840b7-9608-4cb6-a127-b07b82cd28af)
 
 
 ## NEWS
@@ -51,8 +51,8 @@ Configuration is identical to what is already explained in the example section
 <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Mariusthvdb&repository=custom-ui-icon-color&category=plugin" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
 
 ## Examples
-See [EXAMPLES](https://github.com/Mariusthvdb/custom-ui-icon-color/blob/master/EXAMPLES.md).
-For card-mod replacement mods, see [CARD-MOD-EXAMPLES](https://github.com/Mariusthvdb/custom-ui-icon-color/blob/main/CARD-MOD-EXAMPLES.md)
+See [EXAMPLES](https://github.com/Mariusthvdb/custom-icon-color/blob/master/EXAMPLES.md).
+For card-mod replacement mods, see [CARD-MOD-EXAMPLES](https://github.com/Mariusthvdb/custom-icon-color/blob/main/CARD-MOD-EXAMPLES.md)
 
 ---
 
