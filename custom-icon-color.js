@@ -1,7 +1,7 @@
-const Name = "Custom-ui-icon-color";
-const Version = "20231128";
+const Name = "Custom-icon-color";
+const Version = "202340101";
 const Description = "add icon_color to UI";
-const Url = "https://github.com/Mariusthvdb/custom-ui-icon-color";
+const Url = "https://github.com/Mariusthvdb/custom-icon-color";
 console.info(
   `%c  ${Name}  \n%c  Version ${Version} ${Description}`,
   "color: gold; font-weight: bold; background: black",
