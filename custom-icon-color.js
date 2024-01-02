@@ -32,12 +32,9 @@ window.customUI = {
       }
     });
   },
-  installClassHooks() {
-    window.customUI.installStateBadge();
-  },
   init() {
     window.customUI.initDone = true;
-    window.customUI.installClassHooks();
+    window.customUI.installStateBadge();
     window.CUSTOM_UI_LIST = window.CUSTOM_UI_LIST || [];
     window.CUSTOM_UI_LIST.push({
       name: Name,
