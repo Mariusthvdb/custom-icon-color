@@ -57,13 +57,13 @@ For card-mod replacement mods, see [CARD-MOD-EXAMPLES](https://github.com/Marius
 ---
 
 ## Learn core Home Assistant customization 
-It goes without saying that custom-ui-icon-color is an extension of core Home Assistant functionality. As 
+It goes without saying that custom-icon-color is an extension of core Home Assistant functionality. As 
 such, you should understand what is documented on 
 [Homeassisant.io](https://www.home-assistant.io/docs/configuration/customizing-devices/) about the 
 subject.
 
 ### Caveats
-Custom-ui-icon-color can't customize everything. Entities created in python scripts (you need to set the 
+Custom-icon-color can't customize everything. Entities created in python scripts (you need to set the 
 customization in the script itself) and entities created by several add-ons can't be touched by 
 custom-ui. E.g. Home Assistant Google Drive Backup, and Argon One active cooling. You can work 
 around that by creating template sensors for those entities, which you can again customize in HA.
