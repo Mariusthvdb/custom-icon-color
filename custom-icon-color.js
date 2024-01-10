@@ -1,6 +1,6 @@
 const Name = "Custom-icon-color";
-const Version = "202340101";
-const Description = "add icon_color to UI";
+const Version = "20240110";
+const Description = "add icon_color";
 const Url = "https://github.com/Mariusthvdb/custom-icon-color";
 console.info(
   `%c  ${Name}  \n%c  Version ${Version} ${Description}`,
