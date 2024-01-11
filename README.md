@@ -12,14 +12,14 @@ We can
 However, there is no core attribute for an **icon_color**. [Custom-ui](https://github.com/Mariusthvdb/custom-ui) can add that, and many other things, like templating any atttribute.
 Custom-ui is very powerful and capable of changing our Dashboards. For some this is too much, and not required. That's why we released this adapted version, only adding the custom `icon_color` attribute.
 
-If you do require dynamic icon_colors on regular entities, use card_mod. You can find a selection of [CARD-MOD-EXAMPLES](https://github.com/Mariusthvdb/custom-icon-color/blob/main/CARD-MOD-EXAMPLES.md) to show you how.
-
 You can use it to set the additional attribute in `customize:`, on a single entity, or **globally** in our Home Assistant configuration and thus create extremely powerful yet 
 very compact customizations.
 
 You can also use it in [template:](https://www.home-assistant.io/integrations/template/#attributes) entities sensors and  Jinja templates for it to follow the state of, well, just about anything.
 
 <img width="492" alt="icon-color" src="https://user-images.githubusercontent.com/33354141/168234088-ee5a5b11-0e68-49fd-b664-6e5a13c79fb0.png">
+
+If you do require dynamic icon_colors on regular entities, use card_mod. You can find a selection of [CARD-MOD-EXAMPLES](https://github.com/Mariusthvdb/custom-icon-color/blob/main/CARD-MOD-EXAMPLES.md) to show you how.
 
 Some live action:
 
