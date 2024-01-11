@@ -28,6 +28,12 @@ Some live action:
 
 ## NEWS
 
+**New version also works on button and entity card**
+
+Before, these cards were untouched, and icon_color wasnt compatible. As of 20240110 you can also set customizations for icon_color on 
+* [Entity card](https://www.home-assistant.io/lovelace/entity/)
+* [Button card](https://www.home-assistant.io/lovelace/button/)
+
 **New Custom More-info**
 
 [Custom More-info](https://github.com/Mariusthvdb/custom-more-info) is a new custom Plugin for Home Assistant and superseeds the plugin `custom-attributes` announced below. 
@@ -63,7 +69,7 @@ subject.
 ### Caveats
 Custom-icon-color can't customize everything. Entities created in python scripts (you need to set the 
 customization in the script itself) and entities created by several add-ons can't be touched by 
-custom-ui. E.g. Home Assistant Google Drive Backup, and Argon One active cooling. You can work 
+custom-ui. E.g. Home Assistant Google Drive Backup. You can work 
 around that by creating template sensors for those entities, which you can again customize in HA.
 
 ### Not all Lovelace cards are equal
@@ -74,7 +80,6 @@ Not all core HA cards use the same icon handling. Because of that custom-ui-icon
 
 Thomas Loven's [Card-mod](https://github.com/thomasloven/lovelace-card-mod), which is an amazing 
 plugin for Lovelace with many features, to the rescue.
-
 
 ### History
 I've been a longtime and heavy user of [custom-ui](https://github.com/Mariusthvdb/custom-ui), and this tiny icon_color sibling is the latest adaptation. Minimized, severly cut in functionality, but very useful.
