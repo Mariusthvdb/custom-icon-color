@@ -85,7 +85,6 @@ window.customUI = {
 
 // Install the hooks for updating states, entity cards, and state badges
   installCustomHooks() {
-    window.customUI.installTemplateAttributesHook();
     window.customUI.installEntityCardStylingHook();
     window.customUI.installButtonCardStylingHook();
     window.customUI.installStateBadgeStylingHook();
