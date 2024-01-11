@@ -77,8 +77,11 @@ around that by creating template sensors for those entities, which you can again
 
 ### Not all Lovelace cards are equal
 Not all core HA cards use the same icon handling. Because of that custom-ui cards like
-* [Picture-glance card](https://www.home-assistant.io/dashboards/picture-glance/) or
+* [Picture-glance card](https://www.home-assistant.io/dashboards/picture-glance/)
 * [Tile card](https://www.home-assistant.io/dashboards/tile/)
+* [Statistic card](https://www.home-assistant.io/dashboards/statistic/)
+
+are not customized by `custom-icon-color`.
 
 Thomas Loven's [Card-mod](https://github.com/thomasloven/lovelace-card-mod), which is an amazing 
 plugin for Lovelace with many features, to the rescue.
