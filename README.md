@@ -34,6 +34,8 @@ Before, these cards were untouched, and icon_color wasnt compatible. As of 20240
 * [Entity card](https://www.home-assistant.io/lovelace/entity/)
 * [Button card](https://www.home-assistant.io/lovelace/button/)
 
+A big thank you to @elchininet for his amazing contributions enabking these features.
+
 **New Custom More-info**
 
 [Custom More-info](https://github.com/Mariusthvdb/custom-more-info) is a new custom Plugin for Home Assistant and superseeds the plugin `custom-attributes` announced below. 
