@@ -34,7 +34,8 @@ Before, these cards were untouched, and icon_color wasnt compatible. As of 20240
 * [Entity card](https://www.home-assistant.io/lovelace/entity/)
 * [Button card](https://www.home-assistant.io/lovelace/button/)
 
-A big thank you to @elchininet for his amazing contributions enabking these features.
+A big thank you to [@elchininet](https://github.com/elchininet/custom-sidebar) for his amazing contributions enabking these features. He is also actively involved in the widely used Kiosk-mode.
+Besides that, the modernized custom More-info plugin was developed by him.
 
 **New Custom More-info**
 
