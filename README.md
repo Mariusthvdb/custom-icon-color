@@ -76,10 +76,9 @@ custom-ui. E.g. Home Assistant Google Drive Backup. You can work
 around that by creating template sensors for those entities, which you can again customize in HA.
 
 ### Not all Lovelace cards are equal
-Not all core HA cards use the same icon handling. Because of that custom-ui-icon-color doesn't work with 
-* [Entity card](https://www.home-assistant.io/lovelace/entity/)
-* [Button card](https://www.home-assistant.io/lovelace/button/)
-* [Picture-glance card](https://www.home-assistant.io/lovelace/picture-glance/).
+Not all core HA cards use the same icon handling. Because of that custom-ui cards like
+* [Picture-glance card](https://www.home-assistant.io/dashboards/picture-glance/) or
+* [Tile card](https://www.home-assistant.io/dashboards/tile/)
 
 Thomas Loven's [Card-mod](https://github.com/thomasloven/lovelace-card-mod), which is an amazing 
 plugin for Lovelace with many features, to the rescue.
