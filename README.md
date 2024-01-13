@@ -91,5 +91,3 @@ I've been a longtime and heavy user of [](https://github.com/Mariusthvdb/), and 
 You can read up at 
 [history](https://github.com/Mariusthvdb//blob/master/HISTORY.md) how it came to this 
 adapted version.
-
-<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mariusthvdb&repository=https%3A%2F%2Fgithub.com%2FMariusthvdb%2Fcustom-icon-color%2Ftree%2Fmain&category=Plugin" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
