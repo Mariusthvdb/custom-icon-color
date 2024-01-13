@@ -55,7 +55,7 @@ ___
 
 ## Installation
 
-<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Mariusthvdb&repository=custom-ui-icon-color&category=plugin" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
+<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Mariusthvdb&repository=custom-icon-color&category=plugin" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
 
 ## Examples
 See [EXAMPLES](https://github.com/Mariusthvdb/custom-icon-color/blob/master/EXAMPLES.md).
@@ -72,7 +72,7 @@ subject.
 ### Caveats
 Custom-icon-color can't customize everything. Entities created in python scripts (you need to set the 
 customization in the script itself) and entities created by several add-ons can't be touched by 
-custom-ui. E.g. Home Assistant Google Drive Backup. You can work 
+. E.g. Home Assistant Google Drive Backup. You can work 
 around that by creating template sensors for those entities, which you can again customize in HA.
 
 ### Not all Lovelace cards are equal
@@ -87,9 +87,9 @@ Thomas Loven's [Card-mod](https://github.com/thomasloven/lovelace-card-mod), whi
 plugin for Lovelace with many features, to the rescue.
 
 ### History
-I've been a longtime and heavy user of [custom-ui](https://github.com/Mariusthvdb/custom-ui), and this tiny icon_color sibling is the latest adaptation. Minimized, severly cut in functionality, but very useful.
+I've been a longtime and heavy user of [](https://github.com/Mariusthvdb/), and this tiny icon_color sibling is the latest adaptation. Minimized, severly cut in functionality, but very useful.
 You can read up at 
-[history](https://github.com/Mariusthvdb/custom-ui/blob/master/HISTORY.md) how it came to this 
+[history](https://github.com/Mariusthvdb//blob/master/HISTORY.md) how it came to this 
 adapted version.
 
-<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mariusthvdb&repository=https%3A%2F%2Fgithub.com%2FMariusthvdb%2Fcustom-ui-icon-color%2Ftree%2Fmain&category=Plugin" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
+<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=mariusthvdb&repository=https%3A%2F%2Fgithub.com%2FMariusthvdb%2Fcustom-icon-color%2Ftree%2Fmain&category=Plugin" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
