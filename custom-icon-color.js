@@ -1,5 +1,5 @@
 const Name = "Custom-icon-color";
-const Version = "20240110";
+const Version = "20240116";
 const Description = "add icon_color";
 const Url = "https://github.com/Mariusthvdb/custom-icon-color";
 console.info(
@@ -57,6 +57,35 @@ window.customUI = {
     });
   },
 
+// Install a hook to update the Tile card with custom styling
+  installTileCardStylingHook() {
+    customElements.whenDefined("hui-tile-card").then(() => {
+        const tileCard = customElements.get("hui-tile-card");
+        if (!tileCard) return;
+        if (tileCard.prototype?.updated) {
+            const originalUpdated = tileCard.prototype.updated;
+            tileCard.prototype.updated = function customUpdated(changedProps) {
+
+                if (
+                    !changedProps.has('_config') ||
+                    !changedProps.has('hass')
+                ) {
+                    return;
+                }
+                const { _config, hass } = this;
+                const entityId = _config?.entity;
+                const states = hass?.states;
+                const iconColor = states?.[entityId]?.attributes?.icon_color;
+
+                if (iconColor) {
+                    this.style?.setProperty('--icon-primary-color', iconColor);
+                }
+                originalUpdated.call(this, changedProps);
+            }
+        }
+    });
+  },
+
 // Install a hook to update the state badge with custom styling
   installStateBadgeStylingHook() {
     customElements.whenDefined("state-badge").then(() => {
@@ -87,6 +116,7 @@ window.customUI = {
   installCustomHooks() {
     window.customUI.installEntityCardStylingHook();
     window.customUI.installButtonCardStylingHook();
+    window.customUI.installTileCardStylingHook();
     window.customUI.installStateBadgeStylingHook();
   },
 
