@@ -87,7 +87,7 @@ Thomas Loven's [Card-mod](https://github.com/thomasloven/lovelace-card-mod), whi
 plugin for Lovelace with many features, to the rescue.
 
 ### History
-I've been a longtime and heavy user of [](https://github.com/Mariusthvdb/), and this tiny icon_color sibling is the latest adaptation. Minimized, severly cut in functionality, but very useful.
+I've been a longtime and heavy user of [Custom-ui](https://github.com/Mariusthvdb/custom-ui), and this tiny icon_color sibling is the latest adaptation. Minimized, severly cut in functionality, but very useful.
 You can read up at 
-[history](https://github.com/Mariusthvdb//blob/master/HISTORY.md) how it came to this 
+[history](https://github.com/Mariusthvdb/custom-ui/blob/master/HISTORY.md) how it came to this 
 adapted version.
