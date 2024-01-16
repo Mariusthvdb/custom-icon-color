@@ -33,6 +33,7 @@ Some live action:
 Before, these cards were untouched, and icon_color wasnt compatible. As of 20240110 you can also set customizations for icon_color on 
 * [Entity card](https://www.home-assistant.io/lovelace/entity/)
 * [Button card](https://www.home-assistant.io/lovelace/button/)
+* [Tile card](https://www.home-assistant.io/dashboards/tile/)
 
 A big thank you to [@elchininet](https://github.com/elchininet/custom-sidebar) for his amazing contributions enabling these features. He is also actively involved in the widely used Kiosk-mode.
 Besides that, the modernized custom More-info plugin was developed by him.
@@ -78,7 +79,6 @@ around that by creating template sensors for those entities, which you can again
 ### Not all Lovelace cards are equal
 Not all core HA cards use the same icon handling. Because of that cards like
 * [Picture-glance card](https://www.home-assistant.io/dashboards/picture-glance/)
-* [Tile card](https://www.home-assistant.io/dashboards/tile/)
 * [Statistic card](https://www.home-assistant.io/dashboards/statistic/)
 
 are not customized by `custom-icon-color`.
