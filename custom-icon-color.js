@@ -65,20 +65,30 @@ window.customUI = {
         if (tileCard.prototype?.updated) {
             const originalUpdated = tileCard.prototype.updated;
             tileCard.prototype.updated = function customUpdated(changedProps) {
-
-                if (
-                    !changedProps.has('_config') ||
-                    !changedProps.has('hass')
-                ) {
+                if (!changedProps.has('hass')) {
+                    // There is no new entity data, therefore nothing to update on the card.
                     return;
                 }
                 const { _config, hass } = this;
+                if (!_config) {
+                    // If there is no config for the card, nothing can be done.
+                    return;
+                }
                 const entityId = _config?.entity;
                 const states = hass?.states;
                 const iconColor = states?.[entityId]?.attributes?.icon_color;
-
                 if (iconColor) {
-                    this.style?.setProperty('--icon-primary-color', iconColor);
+                    // For preserving default behaviour, icon color cannot be set on card directly,
+                    // so let's find the ha-card and set the tile color and set it there. 
+                    const shadowRoot = this.shadowRoot;
+                    if (shadowRoot?.childNodes) {
+                      for (const node of shadowRoot.childNodes) {
+                        if (node.nodeName?.localeCompare('ha-card', 'en', { sensitivity: 'base' }) == 0) {
+                          node.style?.setProperty('--tile-color', iconColor, "important");
+                          break;
+                        }
+                      }
+                    }
                 }
                 originalUpdated.call(this, changedProps);
             }
