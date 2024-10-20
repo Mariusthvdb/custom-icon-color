@@ -83,7 +83,7 @@ window.customUI = {
                     const shadowRoot = this.shadowRoot;
                     if (shadowRoot?.childNodes) {
                       for (const node of shadowRoot.childNodes) {
-                        if (node.nodeName?.localeCompare('ha-card', 'en', { sensitivity: 'base' }) == 0) {
+                        if (nodeName === 'HA-CARD') {
                           node.style?.setProperty('--tile-color', iconColor, "important");
                           break;
                         }
