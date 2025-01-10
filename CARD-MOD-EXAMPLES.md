@@ -247,7 +247,7 @@ We won't go into the yaml anchors any deeper here, please find some suggested re
 ## Re-use mods system wide
 ----
 To have  **globally available** card-mod customizations, save these inside your `secrets.yaml` and insert them via
-`!secret <secret>` tag.
+`!secret <secret>` tag. **(NOTE: this is YAML mode only, and not supported in the UI-mode and editor.)**
 
 Example:
 ```
