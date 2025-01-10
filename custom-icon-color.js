@@ -1,5 +1,5 @@
 const Name = "Custom-icon-color";
-const Version = "20240116";
+const Version = "20250110";
 const Description = "add icon_color";
 const Url = "https://github.com/Mariusthvdb/custom-icon-color";
 console.info(
@@ -79,7 +79,7 @@ window.customUI = {
                 const iconColor = states?.[entityId]?.attributes?.icon_color;
                 if (iconColor) {
                     // For preserving default behaviour, icon color cannot be set on card directly,
-                    // so let's find the ha-card and set the tile color and set it there. 
+                    // so let's find the ha-card and set the tile color and set it there.
                     const shadowRoot = this.shadowRoot;
                     if (shadowRoot?.childNodes) {
                       for (const node of shadowRoot.childNodes) {
